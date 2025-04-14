@@ -1,10 +1,30 @@
-Projeto Monociclo
+# Projeto Monociclo MIPS
 
-Um codigo em C capaz de simular um mini mips monociclo.
+Simulador de um processador MIPS monociclo implementado em C. O projeto foi desenvolvido por uma equipe de 3 integrantes ao longo de 4 sprints.
 
-O codigo foi feito separado em 4 Sprints, e 3 pessoas.
+## 😎 Descrição
 
-Ao executar o código, é necessário o carregamento de um arquivo .mem contendo o binário das instruções. É possível salvar alguns arquivos, como um .asm contendo as instruções decodificadas e
-um .dat contendo a memória de dados.
+Este simulador é capaz de interpretar e executar instruções binárias no formato MIPS, utilizando um ciclo único de clock para cada instrução (arquitetura monociclo).
 
-É possível utilizar a função de back várias vezes seguidas, os estados estão sendo guardados em uma pilha
+Durante a execução, o simulador:
+- Carrega um arquivo `.mem` contendo as instruções binárias.
+- Permite salvar:
+  - Arquivo `.asm` com as instruções já decodificadas.
+  - Arquivo `.dat` com o conteúdo da memória de dados.
+
+O sistema também possui uma funcionalidade de **retrocesso (back)**, utilizando uma **pilha de estados**, possibilitando retornar múltiplas etapas anteriores da simulação.
+
+## 🛠️ Tecnologias Utilizadas
+
+- Linguagem C
+- Arquitetura MIPS Monociclo
+- Estrutura de dados (pilha)
+
+## 🚀 Como Executar
+
+1. Compile o código em C com o compilador de sua preferência:
+   ```bash
+   gcc main.c simulador.c -o simulador
+2. Execute o programa
+   ```bash
+   ./simulador
