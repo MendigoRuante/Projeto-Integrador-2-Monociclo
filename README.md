@@ -24,7 +24,7 @@ O sistema também possui uma funcionalidade de **retrocesso (back)**, utilizando
 
 1. Compile o código em C com o compilador de sua preferência:
    ```bash
-   gcc main.c simulador.c -o simulador
+   gcc main.c Monociclo.c -o Monociclo
 2. Execute o programa
    ```bash
-   ./simulador
+   ./Monociclo
